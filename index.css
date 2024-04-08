@@ -18,7 +18,7 @@ header{
 padding: 20px 0px;
 }
 .conteiner{
-max-width: 690px;
+max-width: 40em;
 margin: 0 auto;
 padding: 20px 30px;
 }
@@ -110,4 +110,29 @@ section h2,fieldset legend{
 .lista-participantes >div{
   border: var(--border);
   border-radius: 8px;
+}
+@media only screen and (max-width: 600px) {
+  /* Estilos para telas menores que 600px de largura */
+
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Estilos para telas maiores que 600px, mas menores que 1024px */
+  .conteiner {
+    max-width: 100em;
+    margin: 0 auto;
+    padding: 20px 30px;
+}
+fieldset > div {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.input-wrapper{
+  width: 25em;
+}
+}
+
+@media only screen and (min-width: 1025px) {
+  /* Estilos para telas maiores que 1024px */
 }
